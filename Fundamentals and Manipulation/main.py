@@ -11,6 +11,12 @@ for row in range(100):
 #Printa a estrutura da imagem
 print(img.shape)
 
+#Copia parte da image e salva
+img2 = img[200:600, 400:1000]
+
+#salva o corte da imagem
+cv2.imwrite("Fundamentals and Manipulation\Disney_short.png", img2)
+
 #Mostra a imagem em uma janela
 cv2.imshow("Image", img)
 cv2.waitKey(0)
